@@ -1,4 +1,4 @@
-### Hi there 👋
+### Video ne mogu uplodat na github
 
 <!--
 **petarprstec/petarprstec** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
