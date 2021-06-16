@@ -1,0 +1,305 @@
+body
+{
+	margin:0px;
+	background-color: #1D1D1D;
+}
+
+#zaglavlje
+{
+	margin-bottom:0px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	height:400px;
+	background: url(../images/slike/camera-mobile.jpg) no-repeat;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#zaglavlje h1
+{
+    color: #323232;
+    background-color: rgba(181,181,181,0.70);
+	border-radius: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #85015F;
+    margin: 0;
+    font-size: 50px;
+    font-family: damion;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+	
+}
+
+ul.topnav li {float: none;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	font-family: merienda-one;
+	transition: all 0.3s ease
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #85015F;
+    font-family: merienda-one;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right
+
+#sadrzaj
+{
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+	margin-bottom:0px;
+	min-height:500px;
+	max-height:2000px;
+	overflow:auto;
+	background-color: aqua;
+	align-items: center;
+	text-align: center;
+	align-content: center;
+	
+}
+
+#sadrzaj h1
+{
+	color:white;
+	text-align:center;
+	font-family: damion;
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+#sadrzaj h2
+{
+	color:white;
+	text-align:center;
+	font-family: merienda-one;
+}
+
+#sadrzaj h3
+{
+	color:white;
+	text-align:left;
+	font-family: verdana;
+	size: 50px;
+	margin: 50px;
+}
+
+#sadrzaj p
+{
+	margin-top: 30px;
+	margin-left: 30px;
+	color: white;
+	font-size: 20px;
+	font-family: verdana;
+	text-align: center;
+}
+
+#sadrzaj video{
+	align-items: center;
+	
+}
+
+#prijava form
+{
+	padding:15px;
+	background-color :#B7B7B7;
+	color: #323232;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	align-content: center;
+	display: block;
+}
+
+#prijava h2
+{
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-family: merienda-one;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#prijava span
+{
+    display: block;
+    margin: auto;
+    width: 90%;
+    font-family: merienda-one;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#prijava input[type=text], #prijava input[type=password]
+{
+	display:block;
+	margin:auto;
+	width:90%;
+}
+
+#prijava input[type=submit]
+{
+	display:block;
+	margin:auto;
+	color: #323232;
+	font-size:16px;
+	background-color:#B7B7B7 ;
+}
+
+
+#podnozje
+{
+	background-color: #85015F;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	font-family: "merienda-one";
+}
+
+
+/* responzivnost */
+
+img, iframe, video
+{
+	max-width:100%;
+}
+
+img{
+	align-items: center;
+	size: 20%;
+	display: block;
+}
+
+@media (min-width:700px)
+{
+  ul.topnav li.right {float: right;} 
+  ul.topnav li {
+    float: left;
+    font-family: merienda-one;
+    font-style: normal;
+    font-weight: 400;
+	 border-bottom-left-radius: 24px;
+	  
+}
+}
+
+@media (min-width:750px)
+{
+
+	#zaglavlje
+	{
+		background: url(../images/slike/camera.jpg) no-repeat;
+		background-size:cover;
+	}
+	#zaglavlje h1 {
+    color: #B7B7B7;
+    background-color: unset;
+    font-family: damion;
+    font-style: normal;
+    font-weight: 400;
+		font-size: 80px;
+	}
+}
+/* layout */
+
+*
+{
+	box-sizing:border-box;
+}
+
+.kolona {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.red::after
+{
+	content:"";
+	clear: both;
+	display: table;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 500px) {
+  .kolona {
+    width: 100%;
+  }
+}
+
+
+/* Mobile first */
+[class*="kolona"]
+{
+	float:left;
+	padding:0px;
+	width:100%;
+}
+
+/* tablet */
+@media (min-width:700px)
+{
+	.tkolona1{width:8.33%}
+	.tkolona2{width:16.66%}
+	.tkolona3{width:25%}
+	.tkolona4{width:33.33%}
+	.tkolona5{width:41.66%}
+	.tkolona6{width:50%}
+	.tkolona7{width:58.33%}
+	.tkolona8{width:66.66%}
+	.tkolona9{width:75%}
+	.tkolona10{width:83.33%}
+	.tkolona11{width:91.66%}
+	.tkolona12{width:100%;}
+}
+
+/* desktop */
+@media (min-width:1100px)
+{
+	.dkolona1{width:8.33%}
+	.dkolona2{width:16.66%}
+	.dkolona3{width:25%}
+	.dkolona4{width:33.33%}
+	.dkolona5{width:41.66%}
+	.dkolona6{width:50%}
+	.dkolona7{width:58.33%}
+	.dkolona8{width:66.66%}
+	.dkolona9{width:75%}
+	.dkolona10{width:83.33%}
+	.dkolona11{width:91.66%}
+	.dkolona12{width:100%;}
+}
